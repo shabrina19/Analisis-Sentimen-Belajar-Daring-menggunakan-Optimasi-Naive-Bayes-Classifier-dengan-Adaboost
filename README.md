@@ -87,7 +87,7 @@ In the feature extraction stage, TF-IDF is used to obtain combined weights for e
 
 For a clearer explanation, I will explain with an example using 4 tweets which have also been processed in the previous stage. Tweets used are shown in the image below.
 
-![App Screenshot](https://github.com/shabrina19/Gambar/blob/c1d15058599e73757b95d647a190af9cf8e7efcb/pict%20sentiment%20analysis%20of%20online%20learning/contoh4tweet.png?raw=true)
+![App Screenshot](https://github.com/shabrina19/Gambar/blob/da31ce16df3c8fc35a5512398510dfc7fa8d5401/pict%20sentiment%20analysis%20of%20online%20learning/4tweets.png?raw=true)
  
 The picture below shows an example of TF-IDF results from four documents or four tweets without setting the min_df value, because the example only uses four tweets. The min_df parameter is especially useful when applied to large data. The order of counting starts from 0, so that the resulting sequence of document 0, document 1, document 2, and document 3 is generated. The results of feature extraction are different for each tweet because the number of occurrences of each word is different.
 
@@ -135,7 +135,7 @@ The image below shows the results of precision, recall, and f1-score on each lab
 
 ![App Screenshot](https://github.com/shabrina19/Gambar/blob/main/pict%20sentiment%20analysis%20of%20online%20learning/evalabnb.png?raw=true)
 
-The results of the evaluation of the NBC model with Adaboost obtained an accuracy of 64% while the cross validation score resulted in an average value of 0.6375271007128201. This accuracy can be achieved because the number of positive data is more than negative data, although NBC with Adaboost cannot classify negative labels.
+The results of the evaluation of the NBC model with Adaboost obtained an accuracy of 64% while the cross validation score resulted in an average value of 0.6375271007128201. This accuracy can be achieved because the amount of positive data is much more than negative data, although NBC with Adaboost cannot classify negative labels.
 
 An experiment was carried out by applying Adaboost with the Decision Tree base estimator which is the default base estimator from Adaboost in the Scikit-learn library. This experiment was conducted in order to find out whether there is a mismatch between the data used and Adaboost. The results of the Adaboost evaluation with the Decision Tree are shown in the image below.
 
