@@ -13,7 +13,7 @@ The data will be obtained in csv format and will look like this following image.
 
 ![App Screenshot](https://github.com/shabrina19/Gambar/blob/main/pict%20sentiment%20analysis%20of%20online%20learning/resultTweets.png?raw=true)
 
-After that the csv data format is changed to xlsx to make it easier to translate data using Google Translate.
+After that, change the csv data format to xlsx to make it easier for the next step (translate data using Google Translate ).
 
 
 
