@@ -10,7 +10,9 @@ The keywords used to collect data are Indonesian words related to the word "bela
 
 Collecting tweets requires the api_key, api_secret, consumer_token, and consumer_token_secret from Twitter. After all these things are obtained, enter it to this [code](https://github.com/shabrina19/Analisis-Sentimen-Belajar-Daring-menggunakan-Optimasi-Naive-Bayes-Classifier-dengan-Adaboost/blob/6bb8e8e762b537e6b27bdf9723e2c4afdbc3c0fb/collect-tweets) and run it on the Spyder IDE (Python3.8).
 The data will be obtained in csv format and will look like this following image.
+
 ![App Screenshot](https://github.com/shabrina19/Gambar/blob/main/pict%20sentiment%20analysis%20of%20online%20learning/resultTweets.png?raw=true)
+
 After that the csv data format is changed to xlsx to make it easier to translate data using Google Translate.
 
 
@@ -67,8 +69,9 @@ Label validation is done manually by an expert. Validated data is a sample of al
 
 ![App Screenshot](https://github.com/shabrina19/Gambar/blob/2ccc78b41bb72865dfae3e425fdb5ad78aab8bd4/pict%20sentiment%20analysis%20of%20online%20learning/label2.png?raw=true)
 
-The results of labeling using TextBlob with labels from experts obtained an accuracy of 80% as shown in the picture.
+The results of labeling using TextBlob with labels from experts obtained an accuracy of 80% as shown in the picture below.
 
+![App Screenshot](https://github.com/shabrina19/Gambar/blob/453845d0a1200f7a620ef07807017d1e65d7b79e/pict%20sentiment%20analysis%20of%20online%20learning/textblobakurasi.png?=true)
 
 ## 7. Labeled Data Visualization
 The visualization of labeled data is displayed using a bar chart. The bar chart is used to display the number of positive and negative labels. 
@@ -82,7 +85,7 @@ In the feature extraction stage, TF-IDF is used to obtain combined weights for e
 
 ![App Screenshot](https://github.com/shabrina19/Gambar/blob/c1d15058599e73757b95d647a190af9cf8e7efcb/pict%20sentiment%20analysis%20of%20online%20learning/tfidf.png?raw=true)
 
-For a clearer explanation, I explain with an example using 4 tweets which have also been processed in the previous stage. Tweets used are shown in the image
+For a clearer explanation, I will explain with an example using 4 tweets which have also been processed in the previous stage. Tweets used are shown in the image below.
 
 ![App Screenshot](https://github.com/shabrina19/Gambar/blob/c1d15058599e73757b95d647a190af9cf8e7efcb/pict%20sentiment%20analysis%20of%20online%20learning/contoh4tweet.png?raw=true)
  
