@@ -8,7 +8,7 @@ This project aims to:
 ## 1. Collecting data from Twitter
 The keywords used to collect data are Indonesian words related to the word "belajar daring" or online learning in English. Keywords are determined based on Google Trends. The keywords used are: “belajar daring”, “daring rumah”, “belajar online”, “online siswa”, “corona sekolah”, “corona kuliah”, “kuliah online”, “sekolah online”, and “new normal”.
 
-Collecting tweets requires the api_key, api_secret, consumer_token, and consumer_token_secret from Twitter. After all these things are obtained, enter it to this [code](https://github.com/shabrina19/Analisis-Sentimen-Belajar-Daring-menggunakan-Optimasi-Naive-Bayes-Classifier-dengan-Adaboost/blob/6bb8e8e762b537e6b27bdf9723e2c4afdbc3c0fb/collect-tweets) and run it on the Spyder IDE (Python3.8).
+Collecting tweets requires the api_key, api_secret, consumer_token, and consumer_token_secret from Twitter. After all these things are obtained, enter it to this [code](https://github.com/shabrina19/Analisis-Sentimen-Belajar-Daring-menggunakan-Optimasi-Naive-Bayes-Classifier-dengan-Adaboost/blob/f2f9f6de044244582396f9fcd72e354bd760c2e3/collect-tweets.py) and run it on the Spyder IDE (Python3.8).
 The data will be obtained in csv format and will look like this following image.
 
 ![App Screenshot](https://github.com/shabrina19/Gambar/blob/main/pict%20sentiment%20analysis%20of%20online%20learning/resultTweets.png?raw=true)
@@ -34,7 +34,7 @@ tweets_raw['Processed'].replace('', np.nan, inplace=True)
 tweets_raw.dropna(subset=['Processed'], inplace=True)
 
 # Save in xlsx format
-# tweets_raw[["Processed"]].to_excel("enter the path to save the file /DocumentName.xlsx")
+tweets_raw[["Processed"]].to_excel("enter the path to save the file /DocumentName.xlsx")
 ```
 Data is translated to English because labeling using subjectivity and polarity from the TextBlob library is only available in English. NBC is supervised machine learning that requires labeled data. 
 
